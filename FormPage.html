@@ -1,110 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Page</title>
     <style>
-        body{
-            background-image: url(./img/bggg.jpeg); 
-            /* text-align: center;   */
-        }
-        .logo{
-            margin: 25px 60px;
-            width: 120px;
-        }
-        h3{
-         color: #fff;
-         margin-left: 30px; 
-         margin-bottom: 30px;  
-         font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        .inbox-1 label{
-            color: #fff;
-            margin: 0 40px 20px 30px;
-            font-size: 10px;
-            width: 100%;
-        }
-        .inbox-2 label{
-            color: #fff;
-            margin: 0 10px 20px 30px;
-        }
+      body {
+        background-image: url(./img/bggg.jpeg);
+        /* text-align: center;   */
+      }
+      .logo {
+        width: 120px;
+        display: flex;
+        justify-content: start;
+        padding-left: 30px;
+        padding-top: 30px;
+      }
+      h3 {
+        color: #fff;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .inbox-1 label {
+        color: #fff;
+        margin: 0 40px 20px 30px;
+        font-size: 10px;
+        width: 100%;
+      }
+      .inbox-2 label {
+        color: #fff;
+        margin: 0 10px 20px 30px;
+      }
 
-        .inbox-1 select, input[type="text"]{
-            background: #efefef;
-            width: 70%;
-            height: 30px;
-            border-radius: 10px;
-            padding: 0 15px;
-            margin-bottom: 20px;
-            outline: none;
-        }
-        .inbox-2 input[type="text"]{
-            margin-bottom: 40px;
-            border-style: none;
-            color: black;
-            font-size: 13px;
-        }
-        textarea{
-            width: 600px;
-            background: transparent;
-            border: none;
-            outline: none;
-            border-bottom: 1px solide gray;
-            color: #fff;
-            font-size: 18px;
-            margin-bottom: 16px;
-        }
-        .Submit{
-            margin: 15px 20px;
-            
-        }
-        .send{
-            cursor: pointer;
-            border: none;
-            outline: none;
-        }
-        .content{
-            /* background-color: rgb(71, 78, 104); */
-            background-color: #016081;
+      .inbox-1 select,
+      input[type="text"] {
+        background: #efefef;
+        width: 70%;
+        height: 30px;
+        border-radius: 10px;
+        padding: 0 15px;
+        margin-bottom: 20px;
+        outline: none;
+      }
+      .inbox-2 input[type="text"] {
+        margin-bottom: 40px;
+        border-style: none;
+        color: black;
+        font-size: 13px;
+      }
+      textarea {
+        width: 600px;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solide gray;
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin: 12px;
+      }
 
-            overflow: hidden;
-            width: 60%;
-            margin-left: 270px;    
-        }
+      ::placeholder {
+        color: rgba(255, 255, 255, 0.809);
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .Submit {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        margin: 4px;
+        padding: 0.3rem 1.5rem;
+        text-align: center;
+        margin-bottom: 6px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 4px;
+        font-size: 10px;
+      }
+      .send {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color: #016081;
+      }
+      .content {
+        /* background-color: rgb(71, 78, 104); */
+        background-color: #016081;
+        background-size: cover;
+        background-position: center center !important;
+        background-attachment: fixed;
+        top: 20%;
+        left: 4%;
+        position: absolute;
+        overflow: hidden;
+        width: 55%;
+        margin-left: 270px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <img class="logo" src="./img/Logo2.png" alt="bfreeLogo">
+      <img
+        class="logo"
+        src="./img/Logo2.png"
+        onClick="location.href='LandingPage.html'"
+        alt="bfreeLogo"
+      />
     </div>
     <div class="content">
-        <h3>New Message</h3>
+      <h3>New Message</h3>
 
-        <div class="inbox-1">
-            <label for="to">TO</label>
-            <select name="" id="">
-                <option value=""></option>
-                <option value="hr">HR</option>
-                <option value="tech">TECH</option>
-                <option value="operations">OPERATIONS</option>
-            </select>
-        </div>
+      <div class="inbox-1">
+        <label for="to">TO</label>
+        <select name="" id="">
+          <option value=""></option>
+          <option value="hr">HR</option>
+          <option value="tech">TECH</option>
+          <option value="operations">OPERATIONS</option>
+        </select>
+      </div>
 
-        <div class="inbox-2">
-            <label for="subject">Subject</label>
-            <input type="text">
-        </div>
+      <div class="inbox-2">
+        <label for="subject">Subject</label>
+        <input type="text" />
+      </div>
 
-        <div class="comment">
-            <textarea name="comp" id="" cols="30" rows="10" placeholder="Fill complaints"></textarea>
-        </div>
+      <div class="comment">
+        <textarea
+          name="comp"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Fill complaints"
+        ></textarea>
+      </div>
 
-        <hr>
-        <div class="Submit">
-            <input type="submit" class="send" onClick="location.href='RatingPage.html'">
-        </div>
+      <hr />
+      <div class="Submit">
+        <input
+          type="submit"
+          class="send"
+          onClick="location.href='RatingPage.html'"
+        />
+      </div>
     </div>
-</body>
+  </body>
 </html>
