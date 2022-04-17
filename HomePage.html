@@ -5,166 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <style>
-      html,
-      body {
-        margin: 0;
-        background-size: cover;
-        width: 100%;
-        height: 100vh;
-        background-image: url(./img/bggg.jpeg);
-      }
-      .container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-      }
-      .nav-bar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .logo {
-        width: 120px;
-        /* display: flex; */
-        justify-content: start;
-        padding-left: 30px;
-        padding-top: 5px;
-      }
-      img {
-        cursor: pointer;
-      }
-
-      .nav-bar h3 {
-        background-color: dodgerblue;
-        color: #fff;
-        margin-top: 0;
-        /* overflow: hidden; */
-        font-size: 80px;
-        padding: 30px 5px;
-        margin-left: 0;
-      }
-      .nav-bar i {
-        /* color: #fff; */
-        margin-right: 10px;
-        font-size: 20px;
-        cursor: pointer;
-        background-color: rgba(50, 95, 153, 0.974);
-      }
-      .nav-bar h3 {
-        margin-right: 25px;
-        font-size: 16px;
-        /* color: #fff; */
-      }
-
-      .content {
-        /* margin: 30px 40px;
-    color:#fff ;
-    font-size: 10px;
-    font-weight: bold;
-    line-height: 20px; */
-        text-align: center;
-      }
-
-      .main-content {
-        color: #fff;
-        font-size: 40px;
-      }
-      .sub-content {
-        color: #fff;
-        font-size: 20px;
-        text-align: center;
-      }
-      /* .logo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* position: absolute; */
-      /* margin: 0 0 10px; */
-      /* background-color: white; */
-      /* padding: 20px; */
-      /* } */
-      */ .btn-col {
-        position: absolute;
-        top: 30%;
-        left: 40%;
-      }
-      .btn-1 {
-        padding: 30px 5px;
-        border-style: hidden;
-        border-radius: 8px;
-        background-color: rgba(50, 95, 153, 0.974);
-        margin: 5px;
-        color: #fff;
-        box-shadow: 0 1px 4px rgba(50, 95, 153, 0.974);
-        margin-top: 50px;
-        display: inline-block;
-        font-size: 30px;
-        cursor: pointer;
-        width: 300px;
-        outline: none;
-      }
-      .btn-1:hover {
-        background-color: #fff;
-        color: rgba(50, 95, 153, 0.974);
-      }
-      .btn-2:hover {
-        background-color: #fff;
-        color: rgba(50, 95, 153, 0.974);
-      }
-      .btn-2 {
-        padding: 30px 5px;
-        border: none;
-        border-radius: 10px;
-        background-color: rgba(50, 95, 153, 0.974);
-        margin: 5px;
-        color: #fff;
-        box-shadow: 0 1px 4px 0 rgba(50, 95, 153, 0.974);
-        margin-top: 50px;
-        display: inline-block;
-        font-size: 30px;
-        cursor: pointer;
-        width: 300px;
-        outline: none;
-      }
-      /* .btn:hover {
-    background-color: #fff;
-    color: #00a4db;
-    box-shadow: 0 3px 5px 0 #333333, 0 3px 5px 0 #333333;
-} */
-
-      .btn-col i {
-        font-size: 20px;
-        margin-left: 12px;
-        /* background-color: dodgerblue; */
-        padding: 8px;
-        border-radius: 5px;
-      }
-      .btn-col i:hover {
-        background-color: #fff;
-        /* color: #fff; */
-      }
-      .btn-col p {
-        font-size: 12.5px;
-        padding: 0 5px;
-        /* text-indent: 100px; */
-      }
-    </style>
   </head>
   <body>
     <div class="container">
       <div class="nav-bar">
-        <img
+        <!-- <img
           class="logo"
           src="./img/Logo2.png"
           onClick="location.href='index.html'"
           alt="Bfree Logo"
+        /> -->
+        <img
+          class="logo"
+          src="img/BfreeLogo.png"
+          onClick="location.href='LandingPage.html'"
+          alt="BfreeLogo"
+          width="160"
+          height="70"
         />
         <h3>
-          <i class="fa-solid fa-user"></i>Update Profile
-
+          <i class="fa-solid fa-user"></i>Update Profiles
           <i class="fa-solid fa-angle-right"></i>
         </h3>
       </div>
@@ -198,3 +58,130 @@
     </div>
   </body>
 </html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(./img/bggg.jpeg); */
+    background-image: white;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    /* width: 120px; */
+    justify-content: start;
+    padding-left: 30px;
+    padding-top: 5px;
+  }
+  img {
+    cursor: pointer;
+  }
+
+  .nav-bar h3 {
+    background-color: rgb(83, 134, 201);
+    /* background-image: url(https://api.iconify.design/iconoir:profile-circled.svg?color=%23000000); */
+    color: black;
+    cursor: pointer;
+    margin-top: 0;
+    font-size: 80px;
+    padding: 30px 5px;
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  .nav-bar i {
+    /* color: #fff; */
+    /* margin-right: 10px; */
+    /* font-size: 20px; */
+    cursor: pointer;
+    /* background-color: rgba(50, 95, 153, 0.974); */
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .main-content {
+    color: black;
+    font-size: 40px;
+  }
+  .sub-content {
+    color: rgb(59, 59, 59);
+    font-size: 20px;
+    text-align: center;
+  }
+
+  */ .btn-col {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+  }
+  .btn-1 {
+    padding: 30px 5px;
+    border-style: hidden;
+    border-radius: 8px;
+    background-color: rgba(75, 136, 216, 0.974);
+    margin: 5px;
+    color: #fff;
+    box-shadow: 0 1px 4px rgba(50, 95, 153, 0.974);
+    margin-top: 50px;
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    width: 300px;
+    outline: none;
+  }
+  .btn-1:hover {
+    background-color: rgba(50, 95, 153, 0.974);
+    color: #fff;
+  }
+  .btn-2:hover {
+    background-color: rgba(50, 95, 153, 0.974);
+    color: #fff;
+  }
+  .btn-2 {
+    padding: 30px 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(75, 136, 216, 0.974);
+    margin: 5px;
+    color: #fff;
+    box-shadow: 0 1px 4px 0 rgba(50, 95, 153, 0.974);
+    margin-top: 50px;
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    width: 300px;
+    outline: none;
+  }
+
+  .btn-col i {
+    font-size: 20px;
+    margin-left: 12px;
+    /* background-color: dodgerblue; */
+    padding: 8px;
+    border-radius: 5px;
+  }
+  .btn-col i:hover {
+    background-color: #fff;
+  }
+  .btn-col p {
+    font-size: 12.5px;
+    padding: 0 5px;
+    /* text-indent: 100px; */
+  }
+</style>
