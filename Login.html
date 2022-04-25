@@ -45,16 +45,17 @@
               <!-- <label>  Password</label> -->
               <div class="form-field">
                 <input type="Password" placeholder="Password" required />
-                <!-- <label>  Forgot password?  <a onClick="location.href='ForgotPassword.html'">Reset password</a> </label> -->
+                <!-- <label> <a onClick="location.href='ForgotPassword.html'">Reset password</a> </label> -->
+                </form>
               </div>
               <div class="passwordreset">         
               <h4>Forgot password? <a onClick="location.href='ForgotPassword.html'">Reset password</a></h4>
               </div>
 
-              <div class="form-field">
+              <div class="Login">
                 <button class="btn" type="Login" > <a onClick="location.href='HomePage.html'">Login</a></button>
               </div>             
-            </form>
+            
              <div class="CreateAcct">         
               <h4>Click to <a onClick="location.href='SignUp.html'">Create an account</a></h4>
               </div>
@@ -94,12 +95,12 @@ img{
 }
 
  h4 {
-  color: black;
+  /* color: black; */
   text-align: center;
 }
 
 h1 {
-  color: black;
+  /* color: black; */
   text-align: center;
   padding-bottom: 15px;
 }
@@ -174,7 +175,7 @@ form input {
   color: white;
 }
 
-form .btn {
+button  {
   outline: none;
   border: none;
   cursor: pointer;
@@ -191,25 +192,17 @@ form .btn {
 .btn a{
   color: white;
 }
+.Login {
+text-align: center;
+margin-top: 20px;
+ }
 
-
-form  h4{
-  color: rgb(7, 7, 7);
-
-}
-form .passwordreset{
-    font-size: 20px;
-  color: black;
-}
-
-form .passwordreset a{
+.passwordreset a{
   cursor: pointer;
   text-decoration: none;
     font-size: 13px;
   color: rgba(50, 95, 153, 0.974);
 }
-
-
 
 .CreateAcct a {
   color: rgba(50, 95, 153, 0.974);
